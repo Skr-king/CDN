@@ -1,0 +1,85 @@
+site_name: Beautiful World
+site_author: Sky_H_N
+repo_url: https://github.com/AngelNI
+site_url: https://github.com/AngelNI
+site_description: Beautiful World
+
+theme:
+  language: 'zh'
+  feature:
+    tabs: true
+  name: 'material'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+    font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+    include_search_page: false
+    search_index_only: true
+
+page:
+    - Home: index.md
+    - 扩展:
+        - 外部存储: 外部存储.md
+    - 其他功能:
+        - 安全配置: index.md
+    
+extra:
+  palette:
+    primary: 'Blue Grey'
+    accent: 'Red'
+
+extra:
+  search:
+    language: 'zh'
+  social:
+    - type: 'github'
+      link: 'https://github.com/AngelNI'
+
+extra_css:
+  - '_static/extra.css'
+
+extra_javascript:
+  - 'https://cdn.jsdelivr.net/gh/ethantw/Han@3.3.0/dist/han.min.js'
+  - '_static/js/extra.js?v=10'
+  - 'https://cdnjs.loli.net/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+  
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
